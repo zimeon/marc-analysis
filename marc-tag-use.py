@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+"""Calculate MARC tag usage stats for a set of MARCXML records."""
 from optparse import OptionParser
 from pymarc.marcxml import parse_xml_to_array
 import gzip
@@ -6,7 +7,9 @@ import logging
 import os
 import os.path
 
+
 class Stats(object):
+    """Class to accumulate tag use stats."""
 
     def __init__(self):
         """Initialize counters for Stats object."""
@@ -19,12 +22,13 @@ class Stats(object):
     def add(self, record):
         """Add a record to the stats."""
         try:
-            last_tag = None
+            # Set of tags used in this record
+            tt = set()
             for field in record:
-                tag = int(field.tag)
-                if (tag != last_tag):  # avoid double counting multiple field entries per record
-                    self.stats[tag] += 1
-                last_tag = tag
+                tt.add(int(field.tag))
+            # Add to stats (use of set avoids dupes)
+            for tag in tt:
+                self.stats[tag] += 1
             self.num_records += 1
         except:
             self.num_bad += 1
@@ -76,7 +80,7 @@ def main():
                     filepath = os.path.join(dirpath, name)
                     logging.info("Reading %s" % (filepath))
                     stats.add_records_from_file(filepath)
-    print(stats)            
+    print(stats)
 
 if __name__ == "__main__":
     main()
