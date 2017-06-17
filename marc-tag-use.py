@@ -76,7 +76,7 @@ def main():
         else:
             logging.info("Looking under %s" % (top))
             for (dirpath, dirnames, filenames) in os.walk(top):
-                for name in filenames:
+                for name in sorted(filenames):
                     filepath = os.path.join(dirpath, name)
                     logging.info("Reading %s" % (filepath))
                     stats.add_records_from_file(filepath)
