@@ -22,8 +22,10 @@ class Coverage(object):
         self.num_records = 0
         self.num_bad = 0
         self.coverage = {}
+        self.examples = {}
         for t in tags:
             self.coverage[t] = 0
+            self.examples[t] = []
 
     def add(self, record):
         """Add a record to the stats."""
@@ -32,11 +34,14 @@ class Coverage(object):
             tt = set()
             for field in record:
                 tt.add(int(field.tag))
+            bibid = record['001'].value()
             # Count of self.tags until all covered
             for t in self.tags:
                 tt.discard(t)
                 if (len(tt) == 0):
                     self.coverage[t] += 1
+                    if (len(self.examples[t]) < 3):
+                        self.examples[t].append(bibid)
                     break
             self.num_records += 1
         except:
@@ -69,7 +74,8 @@ class Coverage(object):
             tag_subset = self.tags[0:(j + 1)]
             total += self.coverage[tag]
             tstr = "%s tags (%s)" % (j + 1, tag_summary(tag_subset))
-            s += "%-30s  %8d (+%6d)  %4.1f%%\n" % (tstr, total, self.coverage[tag], (total * 100.0 / self.num_records))
+            estr = "(bibids: %s)" % (' '.join(self.examples[tag])) if (len(self.examples[tag])) else ''
+            s += "%-30s  %8d (+%6d)  %4.1f%%  %s\n" % (tstr, total, self.coverage[tag], (total * 100.0 / self.num_records), estr)
         return(s)
 
 
