@@ -1,0 +1,1820 @@
+
+BIBCO Standard Record (BSR) 
+
+RDA Metadata Application Profile
+
+
+
+April 14, 2017 revision
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program for Cooperative Cataloging
+
+Washington, D.C.
+
+2017
+
+BIBCOmail@loc.gov
+
+
+
+
+
+
+Table of Contents
+
+
+Introduction	3
+
+RDA Core and PCC Core Elements	6
+
+Required Non-RDA and MARC Data	20
+
+Archival Materials	20
+
+Audio Recordings	22
+
+Cartographic Resources	24
+
+Electronic Resources [Computer File Format (Ldr/06 ?m?)]	27
+
+Graphic Materials	29
+
+Moving Images	31
+
+Notated Music	33
+
+Rare Materials (Books, Cartographic Resources, Graphics, and Notated Music)	35
+
+Textual Monographs	38
+
+Supplemental Requirements for the Digital Aspects of Formats [Except Computer File Format (Ldr/06 ?m?)]	40
+
+
+
+
+
+Introduction
+The BIBCO Standard Record (BSR) is a combination of RDA ?Core,? RDA ?Core if,? ?PCC Core,? and ?PCC Recommended? elements applicable to archival materials, audio recordings, cartographic resources, electronic resources (if cataloged in the computer file format), graphic materials, moving images, notated music, rare materials, and textual monographs. The BSR also incorporates supplemental requirements for these resource types when presented in digital formats, and it can be used to describe digital reproductions. Instructions in the BSR should be read in conjunction with the LC-PCC Policy Statements (LC-PCC PSs) that are integrated into the RDA Toolkit. When describing online resources, catalogers may also consult the PCC RDA Provider-Neutral guidelines. When describing continuing resources, catalogers should consult the CONSER Standard Record (CSR) RDA Metadata Application Profile.
+
+
+
+The BSR follows RDA 0.6.4 in its approach to the concept of core: ?As a minimum, a resource description for a work, expression, manifestation, or item should include all the core elements that are applicable and readily ascertainable.? The ?PCC Recommended? elements are not core; their inclusion is encouraged but discretionary.
+
+
+
+The BSR is a model for bibliographic monographic records using a single encoding level (Ldr/17=?blank?) in a shared database environment. Catalogers satisfy BSR requirements when creating and/or modifying bibliographic records, and determine the level of fullness that best suits the resources in their collections and the needs of their users. The BSR establishes a baseline set of elements that emphasize access points over descriptive data. The standard seeks to ensure inclusion of the essential data elements necessary to meet user needs; it is a solid "floor" description of a resource that can be built upon in a shared environment. The standard also does not preclude the use of any data in a bibliographic description representing more extensive cataloging treatment.
+
+
+
+Authority records must support authorized access points in a BIBCO record. The mapping to MARC 21 fields included in the BSR is intended to be a general guide. For specific instructions on recording data in the MARC 21 format, please refer to official MARC 21 documentation, OCLC Bibliographic Formats and Standards, and the MARC-to-RDA/RDA-to-MARC mappings in the RDA Toolkit. BSR elements not directly related to RDA (e.g., classification; access points for subjects), or data treated in MARC 21 control/fixed fields, are included in separate tables at the end of this document.
+
+
+
+Catalogers not authenticating their records for BIBCO may use the BSR for guidance but should also ensure that their records comply with any additional standards relevant to their particular situation where these vary from PCC requirements. In these records, some data required in BIBCO records will not be appropriate and should not be included (e.g., 008/39=?c? and 042=?pcc?). 
+
+
+
+Timeframe for implementation of the BSR RDA Metadata Application Profile
+
+The RDA Metadata Application Profile for the BSR was initially released for use by the PCC community in BIBCO-coded records on January 1, 2013, and was fully implemented two years later. As of January 1, 2015, all new BIBCO-coded records must follow the RDA Metadata Application Profile. The guidelines and requirements in the BSR have been revised periodically and will continue to evolve as the PCC evaluates their effectiveness, as modifications are made to Resource Description & Access, and as other RDA-related policies are developed within the PCC and other communities (e.g., development of various DCRM standards for rare materials). Any comments or suggestions for improving the BSR should be submitted to BIBCOmail@loc.gov.
+
+
+
+Explanation of symbols in the ?RDA Instructions & Elements? column of the BSR table: 
+
+* An asterisk (?*?) identifies a general instruction not limited to a particular bibliographic element. 
+
+* A ?T? in parentheses identifies a transcribed element per RDA instructions (?take what you see?) or per LC-PCC Policy Statement (LC-PCC PS) for that instruction.
+
+* A plus sign (?+?) identifies additional elements, beyond the RDA ?Core? and RDA ?Core if? elements, selected to be ?PCC Core? elements for the BIBCO program.
+
+* An ?R? in parentheses identifies additional elements that, while not core in RDA or the BSR, the PCC recommends and encourages catalogers include when the element may be useful to support user tasks (find, identify, select, and obtain).
+
+* The absence of a plus sign (?+?) and an (R) means RDA already defines the element as core.
+
+
+
+Note: A core element in RDA will sometimes be associated with other core elements that represent special applications of the element for particular types of resources (e.g., 6.2.2 "Preferred Title for Work" is associated with 6.14.2 "Preferred Title for a Musical Work", 6.19.2 "Preferred Title for a Legal Work", etc.). In the BSR table, elements with this kind of relationship are grouped together in a single row for the sake of convenience.
+
+
+
+Instructions for rare materials (books, cartographic resources, graphics, and notated music):
+
+The rare materials provisions in the BSR are closely aligned with the provisions of Descriptive Cataloging of Rare Materials (DCRM) and may be used with any resources deemed rare by the cataloging agency. This includes resources that may require additional details of description to permit the ready identification of copies (e.g., as editions, impressions, or issues) and provide more exact descriptions of them as artifacts. Typically, resources produced before the advent of mechanized printing and papermaking processes in the early 19th century are more likely to require these additional details, but the BSR rare materials provisions may be used if necessary with resources from any period.
+
+
+
+As is the case with the general provisions of the BSR, the rare materials provisions represent a floor on which other elements can be built. They are not intended to reproduce or replace DCRM, and elements in DCRM not in the BSR can certainly be included in the record. The BSR rare materials provisions generally call for expanded treatment of elements within the BSR or deem certain RDA elements to be core that are not considered core for other types of materials. Two cases call for different treatment rather than simply expansion of the description. These are: 1.7.1 alternative 1, which invokes the option of using DCRM as the designated published style manual in place of RDA 1.7.2-1.7.9 for transcribing; and 3.4, which calls for applying DCRM conventions when recording extent rather than RDA conventions. These were singled out by the rare community as areas where there were valid rare materials reasons for departing from the general guidelines.
+
+
+
+It is intended that the rare materials provisions be usable with any format. However, one of the stipulations of applying the rare materials provisions is the recording of the appropriate ?dcrm? code in 040 in addition to ?rda? in order to label the record as following the BSR rare materials provisions. For the moment, the rare materials provisions in the RDA BSR, especially 1.7.1 alternative 1 and 3.4, should only be used with printed books, cartographic resources, graphics, and notated music (employing the codes ?dcrmb? for rare books, ?dcrmc? for rare cartographic resources, ?dcrmg? for rare graphics, and ?dcrmm? for rare notated music). As other DCRM modules (e.g., manuscripts) are published, the rare provisions of the BSR will become available to other formats and may be expanded. In the meantime other rare materials can certainly be cataloged using the BSR, including rare provisions that call for going beyond the floor of the general BSR, but they should be coded ?rda? only in 040 and should follow the general RDA guidelines for 1.7.1 and 3.4.
+
+
+
+Note: Earlier iterations of the rare books BSR excluded resources produced before 1500. The rare materials provisions of the current BSR do not contain this exclusion and may be used with resources from any period.
+
+
+
+
+
+
+
+RDA Core and PCC Core Elements
+
+
+RDA INSTRUCTIONS & ELEMENTS
+RDA NO.
+NOTES
+MARC ENCODING
+Identifying Manifestations & Items
+
+
+
+General guidelines on transcription *
+1.7.1 
+Alternative (1st): 
+
+Rare materials: Use Descriptive Cataloging of Rare Materials as the ?designated published style manual? in place of the instructions given under RDA 1.7.2-1.7.9 for transcribing punctuation, numerals, symbols, abbreviations, etc.
+Varies
+Numbers expressed as numerals or as words *
+1.8.1
+Optional addition:
+
+Rare materials: Apply the optional addition in the following elements when applicable: date of production, date of publication, date of distribution, date of manufacture.
+Varies
+Form of numerals *
+1.8.2
+Alternative (1st): 
+
+Apply the alternative, except when recording numerals found in these non-Latin scripts: Chinese, Japanese, Korean, Perso-Arabic, Cyrillic, Greek: Substitute Western-style arabic numerals when non-Latin script numerals appear on the resource. If important for identification, the cataloger may record a note showing the non-Latin script form of the numeral found on the resource. Hebrew script: Record dates using the Hebrew script as found on the resource.
+
+
+
+Rare materials: Apply the alternative.
+Varies
+
+
+Alternative (2nd): 
+
+Apply the alternative if the cataloger considers it important for identification.
+
+
+
+Rare materials: Apply the alternative in the following elements when applicable: date of production, date of publication, date of distribution, date of manufacture. 
+
+Numbers expressed as words *
+1.8.3
+Rare materials: Generally record numbers in the form in which they appear on the source of information (see DCRM(B,C,G,M) 0G).
+Varies
+Facsimiles and Reproductions *
+1.11
+See LC-PCC Policy Statement for 1.11 for exceptional practices permitted in PCC records for microfilm reproductions of print resources, print-on-demand reproductions, and photocopies.
+
+Recording titles (T) +
+2.3.1.4
+Archival materials: Most titles will be devised by the cataloger, per RDA 2.3.2.11. Additional guidance on the formulation of titles may be found in DACS 2.3.
+
+Rare materials: Generally do not abridge titles.
+Varies
+Title proper (T)
+2.3.2
+
+245
+Parallel title proper (T) +
+2.3.3
+Record all.
+245
+Other title information (T) +
+2.3.4
+
+245
+Variant title (T) (R) +
+2.3.6
+PCC recommends additional variant titles that are deemed important to identification or access, according to cataloger judgment and/or local policy.
+
+PCC Core for rare materials; record variant titles that are required by the appropriate DCRM module.
+246
+Later title proper (T) +
+2.3.8
+
+246
+Statement of responsibility relating to title proper (T)
+2.4.2
+If more than one, only the first recorded is required by RDA, but catalogers are encouraged to transcribe (or record in a note) any other statements of responsibility that aid in resource discovery, identification, and selection.
+
+Rare materials: Generally transcribe all statements of responsibility relating to title proper found in the preferred source of information.
+
+Rare atlases, rare books, and rare music: If a title and statement of responsibility as recorded have been transposed from their presentation in the source, see also 2.17.3.
+245
+Designation of edition (T)
+2.5.2
+Rare music: Transcribe as an edition statement the music presentation statement as defined by DCRM(M) 3B.
+250
+Statement of responsibility relating to edition (T) +
+2.5.4
+PCC Core for rare materials.
+250
+Designation of named revision of edition (T)
+2.5.6
+
+250
+Place of production (T) +
+2.7.2
+PCC Core for rare materials in unpublished form.
+264
+Date of production
+2.7.6
+Record date of production for a resource in unpublished form.
+
+Archival materials: Additional guidance may be found in DACS 2.4. 
+
+Rare materials: Transcribe date(s) of production found in the resource.
+264
+Place of publication (T)
+2.8.2
+For cataloging purposes, all online resources are considered published.
+
+If more than one, only the first recorded is required.
+
+Also transcribe current place if it differs (for multipart monographs).
+
+Rare materials: Generally transcribe all places of publication (see DCRM(B,C,G,M) 4B6). If a place of publication is known to be fictitious or incorrect, supply a correction in square brackets (see DCRM(B,C,G,M) 4B9).
+264
+Publisher?s name (T)
+2.8.4
+If more than one, only the first recorded is required.
+
+Also transcribe current publisher if it differs (for multipart monographs).
+
+Rare materials: Generally transcribe all publishers? names (see DCRM(B,C,G,M) 4C6). If a publisher?s name is known to be fictitious or incorrect, supply a correction in square brackets (see DCRM(B,C,G,M) 4C5).
+264
+Date of publication
+2.8.6
+Record the publication date(s) found in the resource, supply date(s) in brackets, or record ?[date of publication not identified].?
+
+Rare materials: Transcribe date(s) found in the resource (see DCRM(B,C,G,M) 4D1). If a date of publication is known to be fictitious or incorrect, supply the correct year in square brackets (see DCRM(B,C,G,M) 4D2.4).
+264
+Place of distribution (T) +
+2.9.2
+PCC Core for rare materials when present in the resource. Generally transcribe all places of distribution (see DCRM(B,C,G,M) 4B6). If a place of distribution is known to be fictitious or incorrect, supply a correction in square brackets (see DCRM(B,C,G,M) 4B9). If no place of distribution appears in the resource, supplying the place of distribution or recording ?[Place of distribution not identified]? is not required.
+264
+Distributor?s name (T) +
+2.9.4
+PCC Core for rare materials when present in the resource. Generally transcribe all distributors? names (see DCRM(B,C,G,M) 4C6). If a distributor?s name is known to be fictitious or incorrect, supply a correction in square brackets (see DCRM(B,C,G,M) 4C5). If no distributor?s name appears in the resource, supplying the distributor?s name or recording ?[distributor not identified]? is not required.
+264
+Date of distribution +
+2.9.6
+PCC Core for rare materials when present in the resource. Generally transcribe all dates of distribution (see DCRM(B,C,G,M) 4D1). If a date of distribution is known to be fictitious or incorrect, supply the correct year in square brackets (see DCRM(B,C,G,M) 4D2.4). If no date of distribution appears in the resource, supplying the date of distribution or recording ?[date of distribution not identified]? is not required.
+264
+Place of manufacture (T) +
+2.10.2
+PCC Core for rare materials when present in the resource, if appropriate. Generally transcribe all places of manufacture if appropriate (see DCRM(B,C,G,M) 4E). If a place of manufacture is known to be fictitious or incorrect, supply a correction in square brackets. If no place of manufacture appears in the resource, supplying the place of manufacture or recording ?[Place of manufacture not identified]? is not required.
+264
+Manufacturer?s name (T) +
+2.10.4
+PCC Core for rare materials when present in the resource, if appropriate. Generally transcribe all manufacturers? names if appropriate (see DCRM(B,C,G,M) 4F). If a manufacturer?s name is known to be fictitious or incorrect, supply a correction in square brackets. If no manufacturer?s name appears in the resource, supplying the manufacturer?s name or recording ?[manufacturer not identified]? is not required.
+264
+Date of manufacture +
+2.10.6
+PCC Core for rare materials when present in the resource, if appropriate. Generally transcribe all dates of manufacture if appropriate (see DCRM(B,C,G,M) 4G). If a date of manufacture is known to be fictitious or incorrect, supply the correct year in square brackets. If no date of manufacture appears in the resource, supplying the date of manufacture or recording ?[date of manufacture not identified]? is not required.
+264
+Copyright date (R)
+2.11
+Rare materials: PCC recommends recording the year of copyright when present in the resource. If a full transcription of the copyright statement is desired, record it in a note.
+264
+Title proper of series (T)
+2.12.2
+
+490
+Other title information of series (T) +
+2.12.4
+PCC Core for rare materials.
+490
+Statement of responsibility relating to series (T) +
+2.12.6
+PCC Core for rare materials.
+490
+ISSN of series (T) +
+2.12.8
+
+490
+Numbering within series (T)
+2.12.9
+
+490
+Title proper of subseries (T)
+2.12.10
+
+490
+ISSN of subseries (T) +
+2.12.16
+Transcribe both ISSN of series and ISSN of subseries if both are present.
+490
+Numbering within subseries (T)
+2.12.17
+
+490
+Mode of issuance +
+2.13
+
+Ldr/07
+Identifier for manifestation
+2.15
+Rare music: Record publisher & plate numbers for rare notated music; record issue numbers for rare audio.
+020, 024, 026-028, 074, 088
+Preferred citation +
+2.16
+PCC Core for archival materials.
+524
+Note on title +
+2.17.2
+Make a note giving the source of title, if applicable.
+
+Online resources: Always give this note using a MARC 588 field. See PCC Provider-Neutral E-Resource MARC Record Guide: P-N/RDA Version for full explanation.
+
+Rare graphics: Always make a note giving the source of title.
+500, 588
+Note on statement of responsibility +
+2.17.3
+PCC Core for rare atlases, rare books, and rare music if a title and statement of responsibility as recorded have been transposed from their presentation in the source. Make a note indicating the transposition.
+500
+Note on issue, part, or iteration used as basis for identification of resource +
+2.17.13
+PCC Core for all online monographs.
+
+PCC Core for print multipart monographs, when applicable.
+588
+Custodial history of item +
+2.18
+PCC Core for archival materials; additional guidance may be found in DACS 5.1.
+561
+Immediate source of acquisition of item +
+2.19
+PCC Core for archival materials; additional guidance may be found in DACS 5.2.
+541
+Describing Carriers
+
+
+
+Media type +
+3.2
+
+337
+Carrier type
+3.3
+Always record in 338. For some resource types, 007 field(s) will also be required, including the Specific Material Designation (007/01) for resources other than textual monographs.
+007; 338
+Extent
+3.4
+Always record extent, even though RDA only considers extent to be core if the resource is complete or the total extent is known. Use RDA elements under 3.4.1-3.4.6, as appropriate to the resource.
+
+Online resources: Record extent as ?1 online resource? followed by either pagination (for textual materials) or format-specific terminology when applicable (e.g., vocal score, videodisc, slide, atlas). Record the subunits only if readily ascertainable and considered important for identification. Example: 
+
+1 online resource (1 vocal score (28 pages)).
+
+Cartographic resources: Include accompanying material ($e), if applicable.
+
+Rare materials: Apply Descriptive Cataloging of Rare Materials (DCRM) conventions when recording extent; however, do not use abbreviations.
+300
+Dimensions +
+3.5
+PCC Core for audio recordings, notated music, moving images, still images, cartographic resources, direct-access electronic resources, and rare materials (for rare graphic materials, always specify what was measured). Use RDA elements under 3.5-3.5.3, as appropriate to the resource.
+007; 300, 340
+Base material (R) +
+3.6
+PCC Core for graphic materials. 
+
+PCC recommends for historical audio recordings.
+007/04; 300, 340
+Applied material +
+3.7
+PCC Core for graphic materials.
+300, 340
+Mount +
+3.8
+PCC Core for graphic materials.
+007/05; 300, 340
+Production method +
+3.9
+PCC Core for rare cartographic manuscripts and rare music manuscripts, when applicable.
+300, 340, 500
+Layout +
+3.11
+PCC Core for cartographic resources.
+300
+Bibliographic format (R)
+3.12
+Rare books, rare music, rare atlases: PCC recommends this element when it is applicable and can be determined.
+300, 340
+Sound characteristic +
+3.16
+PCC Core for audio recordings.
+300, 344
+Video characteristic +
+3.18
+PCC Core for moving images, when applicable.
+300, 346
+Digital file characteristic +
+3.19
+PCC Core for cartographic resources. Use RDA 3.19.1-3.19.8 as appropriate to the resource.
+300, 347, 352
+File type +
+3.19.2
+PCC Core for audio recordings, notated music, and moving images, when applicable.
+300, 347
+Encoding format +
+3.19.3
+PCC Core for audio recordings and moving images, when applicable.
+300, 347
+Regional encoding +
+3.19.6
+PCC Core for moving images, when applicable.
+300, 347
+Digital representation of cartographic content +
+3.19.8
+PCC Core for digital cartographic resources.
+300, 347, 352
+Equipment or system requirement (R)
+3.20
+See RDA 3.20.1.3. Use judgment to determine whether systems requirements go beyond the normal or obvious.
+340, 538
+Providing Acquisition & Access Information
+
+
+
+Contact information +
+4.3
+PCC Core for archival materials.
+852
+Restriction on use +
+4.5
+PCC Core for archival materials; absence of restrictions should be noted.
+506
+Uniform Resource Locator +
+4.6
+Do not record URLs that are restricted for use at a specific institution (e.g., proxy URLs) in a master utility record unless it is the only URL available.
+856
+Identifying Works & Expressions
+
+The authorized access point for principal creator (if any) is required for use in conjunction with the work and expression attributes listed in this section (see also RDA 19.2 below). If a formal authorized access point for a work or expression is also included in the BSR, its form should be established following NACO policies.
+
+Preferred title for work
+
+-- Musical work
+
+-- Legal work 
+
+-- Religious work
+
+-- Official communication
+6.2.2
+
+6.14.2
+
+6.19.2
+
+6.23.2
+
+6.26.2
+Record as part of an authorized access point if the preferred title for work differs from the title proper (245 $a $n $p) or if additional differentiating elements are needed.
+130, 240, 7XX
+Form of work
+6.3
+Record if needed to differentiate.
+130, 240, 380, 7XX
+Date of work
+
+-- Legal work
+
+-- Treaty
+6.4
+
+6.20
+
+6.20.3
+Record if needed to differentiate. Always record the date of a treaty. 
+046, 130, 240, 7XX
+Place of origin of work
+6.5
+Record if needed to differentiate.
+130, 240,
+
+7XX
+Other distinguishing characteristic of work
+
+-- Legal work
+6.6
+
+
+
+6.21
+Record if needed to differentiate.
+130, 240, 381, 7XX
+Content type
+6.9
+Always record in Ldr/06 and 336. Also record as part of an authorized access point if needed to differentiate. 
+
+
+
+Rare cartographic resources, rare graphics: Do not follow DCRM(C,G) 1C instructions for recording general material designations.
+Ldr/06; 130, 240, 336, 7XX
+Date of expression
+
+-- Religious work
+6.10
+
+6.24
+Record if needed to differentiate.
+046, 130, 240, 7XX
+Language of expression
+6.11
+Always record in 008/35-37. Record in 041/546 as needed. Record in authorized access point if needed to differentiate.
+008/35-37; 041, 546; 130, 240, 7XX
+Other distinguishing characteristic of expression
+
+-- Musical work
+
+-- Religious work
+6.12
+
+
+
+6.18
+
+6.25
+Record if needed to differentiate.
+130, 240, 381, 7XX
+Medium of performance 
+6.15
+Record if needed to differentiate. See also RDA 7.21.
+130, 240, 382, 7XX
+Numeric designation of musical work
+6.16
+Record if needed to differentiate.
+130, 240, 383, 7XX
+Key
+6.17
+Record if needed to differentiate.
+130, 240, 384, 7XX
+Describing Content
+
+
+
+Coverage of content (R)
+7.3
+PCC recommends for rare cartographic resources unless the geographic and chronological coverage are apparent from the rest of the description.
+045, 500, 522
+Longitude and latitude +
+7.4.2
+PCC Core for cartographic resources.
+
+
+
+Rare cartographic resources: Additional guidance in determining longitude and latitude may be found in DCRM(C) 3D and Appendix K.
+034, 255
+System of organization +
+7.8
+PCC Core for archival materials; additional guidance may be found in DACS 3.2.
+351
+Dissertation or thesis information +
+7.9
+
+502
+Summarization of content (R) +
+7.10
+PCC Core for archival materials; additional guidance may be found in DACS 3.1. 
+
+PCC recommends for other resource types when useful to support user tasks.
+520
+Date of capture (R)
+7.11.3
+PCC recommends for audio recordings.
+033, 518
+Language of content +
+7.12
+Always record language of primary content in 008/35-37. Also record languages of other content in 041/546 if it will assist identification and selection.
+008/35-37; 041, 546
+Script +
+7.13.2
+PCC Core for resources in some languages (see examples at LC-PCC PS for 7.13.2.3).
+546
+Form of musical notation +
+7.13.3
+
+500, 546
+Format of notated music +
+7.20
+
+008/20; 300, 500
+Medium of performance of musical content +
+7.21
+
+048, 382, 500
+Duration +
+7.22
+PCC Core for audio recordings and moving images when readily available.
+008; 300, 306, 500
+Scale
+7.25
+Required only for cartographic resources. Use RDA elements under 7.25.1-7.25.5, as appropriate to the resource (7.25.3 and 7.25.4 are always core under RDA for cartographic resources).
+
+
+
+Rare cartographic resources: Follow DCRM(C) 3B and Appendix J; however, use "approximately" rather than the abbreviation "ca."
+034, 255
+Horizontal scale of cartographic content 
+7.25.3
+
+034, 255
+Vertical scale of cartographic content 
+7.25.4
+
+034, 255
+Projection of cartographic content + 
+7.26
+Rare cartographic resources: Follow DCRM(C) 3C; however, use "projection" rather than the abbreviation "proj."
+255
+Other details of cartographic content +
+7.27
+PCC Core for rare cartographic resources if required by DCRM(C).
+342, 343, 500
+
+
+Agents Associated with a Work
+
+
+
+Relationship Designator
+18.5
+Follow PCC Training Manual for Applying Relationship Designators in Bibliographic Records ? 1XX/7XX $e $i or $j as appropriate
+1XX, 7XX
+Creator
+19.2
+If more than one, only the creator having principal responsibility named first in resources embodying the work or in reference sources is required; if principal responsibility is not indicated, only the first-named creator is required.
+
+After satisfying the RDA core requirement, catalogers may provide additional authorized access points for creators according to cataloger?s judgment.
+
+Archival materials: Additional guidance for recording creators may be found in DACS 9.
+1XX
+
+
+
+
+
+
+
+7XX
+Other agent associated with work
+19.3
+Include if the authorized access point representing that agent is used to construct the authorized access point representing the work.
+
+After satisfying the RDA core requirement, catalogers may provide additional authorized access points according to cataloger?s judgment.
+1XX
+
+
+
+
+
+7XX
+Agents Associated with an Expression
+
+
+
+Contributor (R)
+20.2
+PCC recommends cataloger?s judgment for providing authorized access points for contributors.
+7XX
+Related Works
+
+
+
+Related work (R)
+25.1
+PCC recommends providing a contents note (no limit on number of works in the contents note unless burdensome). Give an analytical authorized access point for the predominant or first work in the compilation. Additional access points for other related works may also be included at the discretion of the cataloger. See section above for elements used to identify works and expressions.
+
+Moving images and audio recordings: Give a full contents note and/or analytical authorized access points for all works in a compilation, when feasible.
+
+If local institutional cataloging policy is to trace a series, use the authorized access point form of the series established in the LC/NACO Authority File.
+
+Archival materials: Provide a reference to finding aids describing the collection, either through notes, access points, and/or URLs, as appropriate.
+
+Rare materials: Citation notes and references to published descriptions are encouraged. Record in the form prescribed by Standard Citation Forms for Rare Materials Cataloging. For notated music, see also Appendix H of DCRM(M).
+5XX, 7XX
+
+
+
+
+
+
+
+
+
+
+
+7XX
+
+
+
+
+
+8XX, 856
+
+
+
+510
+Related Expressions
+
+
+
+Related expression +
+26.1
+PCC Core for compilations. Give a contents note (no limit on number of expressions in the contents note; use cataloger?s judgment). Give an analytical authorized access point for the predominant or first expression in the compilation. Additional access points for other related expressions may also be included at the discretion of the cataloger. See section above for elements used to identify works and expressions.
+
+Audio recordings, notated music, and rare music: Give a full contents note and/or analytical authorized access points for all works in a compilation, when feasible.
+
+If local institutional cataloging policy is to trace an expression of a series, use the authorized access point form of the expression of the series established in the LC/NACO Authority File.
+5XX, 7XX
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8XX
+Related Manifestations
+
+
+
+Related manifestation +
+27.1
+PCC Core for reproductions.
+
+Rare materials: If making separate descriptions for resources that were issued together by the publisher, make a reference to the related manifestation in a ?with? note.
+5XX,
+
+76X-787
+
+
+
+
+Related Items
+
+
+
+Related item (R)
+28.1
+PCC recommends for reproductions, bound-withs, and for special relationships for rare materials if warranted.
+
+Rare materials: If making separate descriptions for resources bound together after publication, make a reference to the related item in a local ?with? note.
+5XX,
+
+76X-787
+
+501 + $5 or 590
+
+
+
+
+
+
+
+
+Required Non-RDA and MARC Data
+
+
+
+
+The following tables outline data required by the BSR, if applicable to the resource being described, that either do not map directly to RDA (e.g., classification and subject access), or are coded data that form part of the MARC 21 Bibliographic Format. Use as many 006 and 007 fields as are appropriate for the resource.
+
+
+
+Archival Materials
+
+
+
+ELEMENT
+NOTES
+MARC ENCODING
+Leader
+
+
+Type of record
+Use ?p? (mixed materials) or ?t? (manuscript language materials)
+Ldr/06
+Bibliographic level
+Use ?c,? ?d,? or ?m? 
+Ldr/07
+Type of control
+Use ?a? (for collections under archival control)
+Ldr/08
+Encoding level
+Use ?blank? value
+Ldr/17
+Descriptive cataloging form
+Use ?i?
+Ldr/18
+Variable Control Fields ? Fixed-Length Data Elements
+
+
+Type of date/publication status
+
+008/06
+Date 1
+
+008/07-10
+Date 2
+
+008/11-14
+Place of publication, production, or execution
+Record the location of the repository [per MARC 21 documentation]
+008/15-17
+Language
+
+008/35-37
+Modified record
+
+008/38
+Cataloging source
+Use ?c? or ?blank? (if authenticating)
+008/39
+Variable Fields
+
+
+Cataloging source: Language of cataloging 
+Always specify that the language of cataloging is English. Use ?eng?.
+040$b
+Cataloging source: Description conventions
+Archival materials: Use ?rda?, and if supplemental instructions from DACS were used in preparing the description, also record with code ?dacs?. Always place $e rda directly after the language of cataloging ($b).
+040$e
+Language code
+PCC Core for all resources if necessary to record more language codes than 008/35-37 allows. See also BSR instructions under RDA 7.12.
+041
+Authentication code
+Use ?pcc? (if authenticating)
+042
+Subject and genre/form access
+Use judgment in assessing each resource. As appropriate, assign a complement of access points that provide access to at least the primary/essential subject and/or form of the work at the appropriate level of specificity. Assign such access points from an established thesaurus, list, or subject heading system.
+
+Archival materials: Addition of genre/form terms (655), occupational terms (656), or functional terms (657) to the bibliographic record is encouraged if local policy calls for the use of such terms, as appropriate to the collection being described.
+6XX
+
+
+
+
+Audio Recordings
+
+
+
+ELEMENT
+NOTES
+MARC ENCODING
+Leader
+
+
+Type of record
+Use ?i? or ?j?
+Ldr/06
+Bibliographic level
+Use ?m? 
+Ldr/07
+Type of control
+Use ?a? (for collections under archival control)
+Ldr/08
+Encoding level
+Use ?blank? value
+Ldr/17
+Descriptive cataloging form
+Use ?i?
+Ldr/18
+Variable Control Fields ? Physical Description Fixed Field
+
+
+Category of material
+
+007/00
+Specific material designation 
+
+007/01
+Speed
+
+007/03
+Dimensions 
+
+007/06
+Variable Control Fields ? Fixed-Length Data Elements
+
+
+Type of date/publication status
+
+008/06
+Date 1
+
+008/07-10
+Date 2
+
+008/11-14
+Place of publication, production, or execution
+
+008/15-17
+Format of music
+
+008/20
+Form of item
+
+008/23
+Language
+
+008/35-37
+Modified record
+
+008/38
+Cataloging source
+Use ?c? or ?blank? (if authenticating)
+008/39
+Variable Fields
+
+
+Cataloging source: Language of cataloging 
+Always specify that the language of cataloging is English. Use ?eng?.
+040$b
+Cataloging source: Description conventions
+Use ?rda?. Always place $e rda directly after the language of cataloging ($b).
+040$e
+Language code
+PCC Core for all resources if necessary to record more language codes than 008/35-37 allows. See also BSR instructions under RDA 7.12.
+041$d
+Authentication code
+Use ?pcc? (if authenticating)
+042
+Subject and genre/form access
+Use judgment in assessing each resource. As appropriate, assign a complement of access points that provide access to at least the primary/essential subject and/or form of the work at the appropriate level of specificity. Assign such access points from an established thesaurus, list, or subject heading system.
+6XX
+
+
+
+
+Cartographic Resources
+
+(For rare and special cartographic resources, see instead ?Rare Materials?)
+
+
+
+ELEMENT
+NOTES
+MARC ENCODING
+Leader
+
+
+Type of record
+Use ?e? or ?f?
+Ldr/06
+Bibliographic level
+Use ?m? 
+Ldr/07
+Type of control
+Use ?a? (for collections under archival control)
+Ldr/08
+Encoding level
+Use ?blank? value
+Ldr/17
+Descriptive cataloging form
+Use ?i?
+Ldr/18
+Variable Control Fields ? Physical Description Fixed Field
+
+
+Category of material
+
+007/00
+Specific material designation 
+
+007/01
+Color
+
+007/03
+Physical medium
+
+007/04
+Type of reproduction
+
+007/05
+Reproduction/reproduction details
+
+007/06
+Positive/negative aspect
+
+007/07
+Variable Control Fields ? Fixed-Length Data Elements
+
+
+Type of date/publication status
+
+008/06
+Date 1
+
+008/07-10
+Date 2
+
+008/11-14
+Place of publication, production, or execution
+
+008/15-17
+Relief
+
+008/18-21
+Projection
+
+008/22-23
+Type of cartographic material
+
+008/25
+Government publication
+
+008/28
+Form of item
+
+008/29
+Index
+
+008/31
+Special format characteristics
+
+008/33-34
+Language
+
+008/35-37
+Modified record
+
+008/38
+Cataloging source
+Use ?c? or ?blank? (if authenticating)
+008/39
+Variable Fields
+
+
+Cataloging source: Language of cataloging 
+Always specify that the language of cataloging is English. Use ?eng?.
+040$b
+Cataloging source: Description conventions
+Use ?rda?. Always place $e rda directly after the language of cataloging ($b).
+040$e
+Language code
+PCC Core for all resources if necessary to record more language codes than 008/35-37 allows. See also BSR instructions under RDA 7.12.
+041
+Authentication code
+Use ?pcc? (if authenticating)
+042
+Geographic area code
+
+043
+Classification numbers
+Assign at least one classification number from an established classification system.
+050, etc.
+Geographic classification
+
+052
+Subject and genre/form access
+Use judgment in assessing each resource. As appropriate, assign a complement of access points that provide access to at least the primary/essential subject and/or form of the work at the appropriate level of specificity. Assign such access points from an established thesaurus, list, or subject heading system.
+
+Cartographic resources: Include at least one topic subdivided geographically or one geographic subject access field at a minimum.
+6XX
+
+
+
+
+Electronic Resources [Computer File Format (Ldr/06 ?m?)]
+
+
+
+ELEMENT
+NOTES
+MARC ENCODING
+Leader
+
+
+Type of record
+Use ?m?
+Ldr/06
+Bibliographic level
+Use ?m? 
+Ldr/07
+Type of control
+Use ?a? (for collections under archival control)
+Ldr/08
+Encoding level
+Use ?blank? value
+Ldr/17
+Descriptive cataloging form
+Use ?i?
+Ldr/18
+Variable Control Fields ? Physical Description Fixed Field
+
+
+Category of material
+Use ?c?
+007/00
+Specific material designation 
+
+007/01
+Variable Control Fields ? Fixed-Length Data Elements
+
+
+Type of date/publication status
+
+008/06
+Date 1
+
+008/07-10
+Date 2
+
+008/11-14
+Place of publication, production, or execution
+
+008/15-17
+Type of computer file
+
+008/26
+Language
+
+008/35-37
+Modified record
+
+008/38
+Cataloging source
+Use ?c? or ?blank? (if authenticating)
+008/39
+Variable Fields
+
+
+Cataloging source: Language of cataloging 
+Always specify that the language of cataloging is English. Use ?eng?.
+040$b
+Cataloging source: Description conventions
+Use ?rda?. Always place $e rda directly after the language of cataloging ($b).
+040$e
+Language code
+PCC Core for all resources if necessary to record more language codes than 008/35-37 allows. See also BSR instructions under RDA 7.12.
+041
+Classification numbers
+Assign at least one classification number from an established classification system.
+050, etc.
+Authentication code
+Use ?pcc? (if authenticating)
+042
+Subject and genre/form access
+Use judgment in assessing each resource. As appropriate, assign a complement of access points that provide access to at least the primary/essential subject and/or form of the work at the appropriate level of specificity. Assign such access points from an established thesaurus, list, or subject heading system.
+6XX
+
+
+
+
+Graphic Materials
+
+(For rare and special graphic materials, see instead ?Rare Materials?)
+
+
+
+ELEMENT
+NOTES
+MARC ENCODING
+Leader
+
+
+Type of record
+Use ?k? or ?g?
+Ldr/06
+Bibliographic level
+Use ?m? 
+Ldr/07
+Type of control
+Use ?a? (for collections under archival control)
+Ldr/08
+Encoding level
+Use ?blank? value
+Ldr/17
+Descriptive cataloging form
+Use ?i?
+Ldr/18
+Variable Control Fields ? Physical Description Fixed Field
+
+
+Category of material
+
+007/00
+Specific material designation 
+
+007/01
+Color
+
+007/03
+Primary support material
+
+007/04
+Secondary support material
+
+007/05
+Variable Control Fields ? Fixed-Length Data Elements
+
+
+Type of date/publication status
+
+008/06
+Date 1
+
+008/07-10
+Date 2
+
+008/11-14
+Place of publication, production, or execution
+
+008/15-17
+Running time for motion pictures and video recordings
+Use for ?g?
+008/18-20
+Form of item
+
+008/29
+Type of visual material
+
+008/33
+Technique
+
+008/34
+Language
+
+008/35-37
+Modified record
+
+008/38
+Cataloging source
+Use ?c? or ?blank? (if authenticating)
+008/39
+Variable Fields
+
+
+Cataloging source: Language of cataloging 
+Always specify that the language of cataloging is English. Use ?eng?.
+040$b
+Cataloging source: Description conventions
+Use ?rda?. Always place $e rda directly after the language of cataloging ($b).
+040$e
+Language code
+PCC Core for all resources if necessary to record more language codes than 008/35-37 allows. See also BSR instructions under RDA 7.12.
+041
+Authentication code
+Use ?pcc? (if authenticating)
+042
+Subject and genre/form access
+Use judgment in assessing each resource. As appropriate, assign a complement of access points that provide access to at least the primary/essential subject and/or form of the work at the appropriate level of specificity. Assign such access points from an established thesaurus, list, or subject heading system.
+6XX
+
+
+
+
+Moving Images
+
+
+
+ELEMENT
+NOTES
+MARC ENCODING
+Leader
+
+
+Type of record
+Use ?g?
+Ldr/06
+Bibliographic level
+Use ?m? 
+Ldr/07
+Type of control
+Use ?a? (for collections under archival control)
+Ldr/08
+Encoding level
+Use ?blank? value
+Ldr/17
+Descriptive cataloging form
+Use ?i?
+Ldr/18
+Variable Control Fields ? Physical Description Fixed Field
+
+
+Category of material
+
+007/00
+Specific material designation 
+
+007/01
+Color
+
+007/03
+Dimensions
+
+007/07
+Variable Control Fields ? Fixed-Length Data Elements
+
+
+Type of date/publication status
+
+008/06
+Date 1
+
+008/07-10
+Date 2
+
+008/11-14
+Place of publication, production, or execution
+
+008/15-17
+Time
+
+008/18-20
+Form of item
+
+008/29
+Type of material
+
+008/33
+Language
+
+008/35-37
+Modified record
+
+008/38
+Cataloging source
+Use ?c? or ?blank? (if authenticating)
+008/39
+Variable Fields
+
+
+Cataloging source: Language of cataloging 
+Always specify that the language of cataloging is English. Use ?eng?.
+040$b
+Cataloging source: Description conventions
+Use ?rda?. Always place $e rda directly after the language of cataloging ($b).
+040$e
+Language code
+PCC Core for all resources if necessary to record more language codes than 008/35-37 allows. See also BSR instructions under RDA 7.12.
+
+Moving images: Use $j when there are subtitles.
+041
+Authentication code
+Use ?pcc? (if authenticating)
+042
+Country of Producing Entity
+The name of the country(s) where the principal offices of the producing entity(s) are located. The subfield may contain an indication that the country is unknown, e.g., [Place of publication not identified]
+257
+Subject and genre/form access
+Use judgment in assessing each resource. As appropriate, assign a complement of access points that provide access to at least the primary/essential subject and/or form of the work at the appropriate level of specificity. Assign such access points from an established thesaurus, list, or subject heading system.
+6XX
+
+
+
+
+Notated Music
+
+(For rare and special notated music materials, see instead ?Rare Materials?)
+
+
+
+ELEMENT
+NOTES
+MARC ENCODING
+Leader
+
+
+Type of record
+Use ?c? or ?d?
+Ldr/06
+Bibliographic level
+Use ?m? 
+Ldr/07
+Type of control
+Use ?a? (for collections under archival control)
+Ldr/08
+Encoding level
+Use ?blank? value
+Ldr/17
+Descriptive cataloging form
+Use ?i?
+Ldr/18
+Variable Control Fields ? Physical Description Fixed Field
+
+
+Category of material
+Microform of notated music monographs: use ?h?.
+007/00
+Specific material designation
+
+007/01
+Variable Control Fields ? Fixed-Length Data Elements
+
+
+Type of date/publication status
+
+008/06
+Date 1
+
+008/07-10
+Date 2
+
+008/11-14
+Place of publication, production, or execution
+
+008/15-17
+Format of music
+
+008/20
+Form of item
+
+008/23
+Language
+
+008/35-37
+Modified record
+
+008/38
+Cataloging source
+Use ?c? or ?blank? (if authenticating)
+008/39
+Variable Fields
+
+
+Cataloging source: Language of cataloging 
+Always specify that the language of cataloging is English. Use ?eng?.
+040$b
+Cataloging source: Description conventions
+Use ?rda?. Always place $e rda directly after the language of cataloging ($b).
+040$e
+Language code
+PCC Core for all resources if necessary to record more language codes than 008/35-37 allows. See also BSR instructions under RDA 7.12.
+041
+Authentication code
+Use ?pcc? (if authenticating)
+042
+Classification numbers
+Assign at least one classification number from an established classification system.
+050, etc.
+Geographic area code
+
+043
+Subject and genre/form access
+Use judgment in assessing each resource. As appropriate, assign a complement of access points that provide access to at least the primary/essential subject and/or form of the work at the appropriate level of specificity. Assign such access points from an established thesaurus, list, or subject heading system.
+6XX
+
+
+
+
+Rare Materials (Books, Cartographic Resources, Graphics, and Notated Music)
+
+
+
+ELEMENT
+NOTES
+MARC ENCODING
+Leader
+
+
+Type of record
+Rare books: Use ?a? or ?t?
+
+Rare cartographic resources: Use ?e? or ?f?
+
+Rare graphics: Use ?k?
+
+Rare music: Use ?c? or ?d?
+Ldr/06
+Bibliographic level
+Rare books, rare music: Use ?m? 
+
+Rare cartographic resources, rare graphics: Use ?m? or ?a? 
+Ldr/07
+Encoding level
+Use ?blank? value
+Ldr/17
+Descriptive cataloging form
+Use ?i?
+Ldr/18
+Variable Control Fields ? Physical Description Fixed Field
+
+
+Category of material
+Use for rare cartographic resources, rare graphics, and microform reproductions of rare materials.
+007/00
+Specific material designation 
+
+007/01
+Color
+(Rare cartographic resources and rare graphics only)
+007/03
+Physical medium
+(Rare cartographic resources only)
+007/04 
+Primary support material
+(Rare graphics only)
+007/04
+Variable Control Fields ? Fixed-Length Data Elements
+
+
+Type of date/publication status
+
+008/06
+Date 1
+
+008/07-10
+Date 2
+
+008/11-14
+Place of publication, production, or execution
+
+008/15-17
+Format of music
+(Rare music only)
+008/20 (Music)
+Relief
+(Rare cartographic resources only)
+008/18-21 (Maps)
+Projection
+(Rare cartographic resources only)
+008/22-23 (Maps)
+Type of cartographic material
+(Rare cartographic resources only)
+008/25 (Maps)
+Form of item
+
+008/23 (Books, Music)
+
+008/29 (Maps, Visual materials)
+Government publication
+(Rare cartographic resources only)
+008/28 (Maps)
+Index
+(Rare cartographic resources only)
+008/31 (Maps)
+Special format characteristics
+(Rare cartographic resources only)
+008/33-34 (Maps)
+Language
+
+008/35-37
+Modified record
+
+008/38
+Cataloging source
+Use ?c? or ?blank? (if authenticating)
+008/39
+Variable Fields
+
+
+Cataloging source: Language of cataloging 
+Always specify that the language of cataloging is English. Use ?eng?.
+040$b
+Cataloging source: Description conventions
+Rare materials: Use ?rda? and the appropriate authorized dcrm code (currently, ?dcrmb?, ?dcrmc?, ?dcrmg?, or ?dcrmm?). Other codes may be used as they become authorized upon publication of their respective DCRM module. Always place $e rda directly after the language of cataloging ($b).
+040$e
+Language code
+PCC Core for all resources if necessary to record more language codes than 008/35-37 allows. See also BSR instructions under RDA 7.12.
+041
+Authentication code
+Use ?pcc? (if authenticating)
+042
+Geographic area code
+(Rare cartographic resources only)
+043
+Subject and genre/form access
+Use judgment in assessing each resource. As appropriate, assign a complement of access points that provide access to at least the primary/essential subject and/or form of the work at the appropriate level of specificity. Assign such access points from an established thesaurus, list, or subject heading system.
+
+Rare books: Adding genre/form terms from one of the Rare Books and Manuscripts Section (RBMS) Controlled Vocabularies is strongly recommended. Assign terms from other thesauri as appropriate.
+
+Rare cartographic resources: Include at least one topic subdivided geographically or one geographic subject access field at a minimum.
+6XX
+
+
+
+
+Textual Monographs
+
+(For rare and special textual monographs, see instead ?Rare Materials?)
+
+
+
+ELEMENT
+NOTES
+MARC ENCODING
+Leader
+
+
+Type of record
+Use ?a? or ?t?
+Ldr/06
+Type of control
+Use ?a? (for collections under archival control)
+Ldr/08
+Bibliographic level
+Use ?m? 
+Ldr/07
+Encoding level
+Use ?blank? value
+Ldr/17
+Descriptive cataloging form
+Use ?i?
+Ldr/18
+Variable Control Fields ? Physical Description Fixed Field
+
+
+Category of material
+Microform textual monographs: use ?h?.
+007/00
+Specific material designation 
+
+007/01
+Variable Control Fields ? Fixed-Length Data Elements
+
+
+Type of date/publication status
+
+008/06
+Date 1
+
+008/07-10
+Date 2
+
+008/11-14
+Place of publication, production, or execution
+
+008/15-17
+Form of item
+
+008/23
+Language
+
+008/35-37
+Modified record
+
+008/38
+Cataloging source
+Use ?c? or ?blank? (if authenticating)
+008/39
+Variable Fields
+
+
+Cataloging source: Language of cataloging 
+Always specify that the language of cataloging is English. Use ?eng?.
+040$b
+Cataloging source: Description conventions
+Use ?rda?. Always place $e rda directly after the language of cataloging ($b).
+040$e
+Language code
+PCC Core for all resources if necessary to record more language codes than 008/35-37 allows. See also BSR instructions under RDA 7.12.
+041
+Authentication code
+Use ?pcc? (if authenticating)
+042
+Classification numbers
+Assign at least one classification number from an established classification system.
+050, etc.
+Subject and genre/form access
+Use judgment in assessing each resource. As appropriate, assign a complement of access points that provide access to at least the primary/essential subject and/or form of the work at the appropriate level of specificity. Assign such access points from an established thesaurus, list, or subject heading system.
+6XX
+
+
+
+
+Supplemental Requirements for the Digital Aspects of Formats
+
+[Except Computer File Format (Ldr/06 ?m?)]
+
+These supplemental requirements define a set of elements for direct and remote access monographic electronic resources (Leader/07 "m" or "c") and should be used in conjunction with the instructions for all other applicable formats and resource types, except for computer files (Leader/06 "m"). When describing resources in the computer file format, use the coding instructions for electronic resources. In addition to the element coding listed below, the 007 field for the specific resource type may also need to reflect digital aspects of the resource.
+
+
+
+ELEMENT
+NOTES
+MARC ENCODING
+Leader
+
+
+Type of record
+Code for the most significant material type of the resource being cataloged.
+Ldr/06
+Bibliographic level
+Use ?m? or ?c?
+Ldr/07
+Variable Control Fields ? Physical Description Fixed Field
+
+
+Category of material
+Use ?c?
+007/00
+Specific material designation 
+Remote access electronic resources: use ?r?
+
+Direct access electronic resources: use ?o?
+007/01
+Variable Control Fields ? Fixed-Length Data Elements
+
+
+Form of item
+Online resources: use ?o? 
+
+Direct access electronic resources: use ?q?
+008/23 or 008/29
+
+
+
+
+Introduction
+
+
+
+
+
+BIBCO Standard Record				Page 3 of 40
+
+April 14, 2017 revision
+
+
+
+BIBCO Standard Record				Page 2 of 40
+
+April 14, 2017 revision
+
+
+
+
+
+Introduction
+
+
+
+* General instruction; (T) Transcribed element; + PCC Core element; (R) PCC Recommended element
+
+
+
+Required Non-RDA and MARC Data (Archival Materials)
+
+
+
+Required Non-RDA and MARC Data (Audio Recordings)
+
+
+
+Required Non-RDA and MARC Data (Cartographic Resources)
+
+
+
+Required Non-RDA and MARC Data (Computer File Format)
+
+
+
+Required Non-RDA and MARC Data (Graphic Materials)
+
+
+
+Required Non-RDA and MARC Data (Moving Images)
+
+
+
+Required Non-RDA and MARC Data (Notated Music)
+
+
+
+Required Non-RDA and MARC Data (Rare Materials)
+
+
+
+Required Non-RDA and MARC Data (Textual Monographs)
+
+
+
+Supplemental Requirements for the Digital Aspects of Formats
+
+
+
+
+
